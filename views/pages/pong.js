@@ -15,7 +15,7 @@ function setup() {
     createCanvas(CanvasWidth, CanvasHeight)
     button = createButton("Play");
     button.mousePressed(resetGame);
-    speedSlider = createSlider(1, 9, 2);
+    speedSlider = createSlider(1, 9, 4);
 }
 
 function resetGame() {
@@ -100,8 +100,9 @@ function gameBall() {
     gameBallInCourt = true;
     this.x = CanvasWidth / 2;
     this.y = (CanvasHeight) / 2;
-    this.ySpeed = 0;
-    this.xSpeed = -ballSpeed;
+    this.ySpeed = ballSpeed;
+    this.xSpeed = ballSpeed;
+    
     this.Update = function() {
         if (this.CollideWithWalls()) {
             this.ySpeed = -this.ySpeed;
