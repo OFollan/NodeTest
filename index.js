@@ -22,7 +22,7 @@ app.get('/cool', function(request, response) {
 });
 
 app.get('/pong', function(request, response) {
-  response.render('pages/test.html');
+  response.render('pages/pong');
 });
 
 app.get('/CV', function(request, response) {
