@@ -24,6 +24,9 @@ app.get('/cool', function(request, response) {
 app.get('/pong', function(request, response) {
   response.render('pages/pong');
 });
+app.get('/a_fucking_life', function(request, response) {
+  response.render('pages/lol');
+});
 
 app.get('/CV', function(request, response) {
   response.render('pages/CV');
