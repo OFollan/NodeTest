@@ -32,6 +32,10 @@ app.get('/CV', function(request, response) {
   response.render('pages/CV');
 });
 
+app.get('/CV', function(request, response) {
+  response.render('pages/CV');
+});
+
 app.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));
 });
